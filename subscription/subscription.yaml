@@ -6,7 +6,7 @@ metadata:
   labels:
     app: kafkapp
   annotations:
-    apps.open-cluster-management.io/github-path: kafka
+    apps.open-cluster-management.io/github-path: deploy
     apps.open-cluster-management.io/github-branch: master
 spec:
   channel: kafka/kafkach
