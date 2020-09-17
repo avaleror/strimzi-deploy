@@ -1,0 +1,4 @@
+resources:
+- kafka.yaml
+- kafka-persistent-single.yaml
+

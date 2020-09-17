@@ -1,0 +1,17 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: kafkasub
+  namespace: kafka
+  labels:
+    app: kafkapp
+  annotations:
+    apps.open-cluster-management.io/github-path: kafka
+    apps.open-cluster-management.io/github-branch: master
+spec:
+  channel: kafka/kafkach
+  placement:
+    placementRef:
+      name: kafkapr
+      kind: PlacementRule
+

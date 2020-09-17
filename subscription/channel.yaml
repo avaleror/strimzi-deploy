@@ -1,0 +1,9 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: kafkach
+  namespace: kafka
+spec:
+  type: GitHub
+  pathname: https://github.com/avaleror/strimzi-deploy.git
